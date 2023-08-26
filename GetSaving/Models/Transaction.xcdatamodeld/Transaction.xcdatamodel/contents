@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22D68" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Expense" representedClassName="Expense" parentEntity="Transaction" syncable="YES" codeGenerationType="class"/>
+    <entity name="Income" representedClassName="Income" parentEntity="Transaction" syncable="YES" codeGenerationType="class"/>
+    <entity name="Transaction" representedClassName="Transaction" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="Date" defaultDateTimeInterval="694220400" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String" defaultValueString="Transaction"/>
+        <attribute name="value" attributeType="Decimal" defaultValueString="0.0"/>
+    </entity>
+</model>

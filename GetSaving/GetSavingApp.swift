@@ -10,11 +10,11 @@ import SwiftUI
 @main
 struct GetSavingApp: App {
     let persistenceController = PersistenceController.shared
+    @State var isHamburgerMenuShowing = false
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            MainTabbedView(presentSideMenu: isHamburgerMenuShowing, persistenceController: persistenceController)
         }
     }
 }
